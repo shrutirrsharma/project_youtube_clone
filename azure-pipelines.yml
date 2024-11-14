@@ -1,0 +1,21 @@
+trigger:
+  - main
+
+pool:
+  name: default
+  demands: agent.name -equals 'ScanVM'
+  #vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: Nodejs
+    displayName: Set Up NodeJs
+    jobs:
+    - job:
+      steps:
+      - task: NodeTool@0
+        inputs:
+          versionSource: 'spec'
+          versionSpec: '16.x'
+          checkLatest: true
+
+    

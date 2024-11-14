@@ -3,7 +3,7 @@ trigger:
 
 pool:
   name: Default
-  demands: agent.name -equals 'ScanVM'
+  demands: agent.name
   vmImage: 'ubuntu-latest'
 
 stages:

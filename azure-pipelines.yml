@@ -17,5 +17,13 @@ stages:
           versionSource: 'spec'
           versionSpec: '16.x'
           checkLatest: true
+          
+  - stage:
+    displayName: Install Dependencies
+    jobs:
+      - job:
+        steps:
+        - script: npm install
+        
 
     

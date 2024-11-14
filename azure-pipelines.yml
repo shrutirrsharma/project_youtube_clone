@@ -4,7 +4,7 @@ trigger:
 pool:
   name: Default
   demands: agent.name -equals 'ScanVM'
-  #vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest'
 
 stages:
   - stage: Nodejs

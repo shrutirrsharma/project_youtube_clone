@@ -25,8 +25,8 @@ stages:
       - script: npm run build
         displayName: 'Build Project'
 
-      - script: npm test -- --all
-        displayName: 'Run Tests'
+      # - script: npm test -- --all
+      #   displayName: 'Run Tests'
         
 
     

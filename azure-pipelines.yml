@@ -22,12 +22,11 @@ stages:
       - script: npm install
         displayName: 'Install Dependencies'
   
-  # - stage:
-  #   displayName: Install Dependencies
-  #   jobs:
-  #     - job:
-  #       steps:
-  #       - script: npm install
+      - script: npm run build
+        displayName: 'Build Project'
+
+      - script: npm test
+        displayName: 'Run Tests'
         
 
     
